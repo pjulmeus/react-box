@@ -1,8 +1,22 @@
+import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
+import ToDoForm from './to-do-form';
+import ToDoList from './to-do-list';
+import ToDo from './to-do';
 
-test('renders learn react link', () => {
+test('renders ', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+});
+
+test('renders ', () => {
+  render(<ToDoForm />);
+});
+
+test('renders ', () => {
+  render(<ToDoList />);
+});
+
+test('renders ', () => {
+  render(<ToDo />);
 });
